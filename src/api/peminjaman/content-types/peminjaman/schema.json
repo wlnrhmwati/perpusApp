@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "peminjamen",
+  "info": {
+    "singularName": "peminjaman",
+    "pluralName": "peminjamen",
+    "displayName": "peminjaman",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tgl_pinjam": {
+      "type": "date"
+    },
+    "tgl_kembali": {
+      "type": "date"
+    },
+    "nis": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::anggota.anggota"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "dikembalikan",
+        "dipinjam"
+      ]
+    },
+    "lama_pinjam": {
+      "type": "string"
+    }
+  }
+}

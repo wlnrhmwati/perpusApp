@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "peminjaman_details",
+  "info": {
+    "singularName": "peminjaman-detail",
+    "pluralName": "peminjaman-details",
+    "displayName": "peminjaman_detail",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "peminjaman_id": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::peminjaman.peminjaman"
+    },
+    "buku_id": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::buku.buku"
+    }
+  }
+}

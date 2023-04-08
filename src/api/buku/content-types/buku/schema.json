@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bukus",
+  "info": {
+    "singularName": "buku",
+    "pluralName": "bukus",
+    "displayName": "Buku",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "kode_buku": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "judul_buku": {
+      "type": "string"
+    },
+    "nama_penulis": {
+      "type": "string"
+    },
+    "nama_penerbit": {
+      "type": "string"
+    },
+    "kategori_buku": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::kategori.kategori"
+    },
+    "tahun_terbit": {
+      "type": "string"
+    }
+  }
+}

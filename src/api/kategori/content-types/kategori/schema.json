@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kategoris",
+  "info": {
+    "singularName": "kategori",
+    "pluralName": "kategoris",
+    "displayName": "Kategori",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "kode_kategori": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "kategori_buku": {
+      "type": "string"
+    }
+  }
+}

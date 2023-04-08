@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "anggotas",
+  "info": {
+    "singularName": "anggota",
+    "pluralName": "anggotas",
+    "displayName": "anggota",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nis": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "nama_siswa": {
+      "type": "string"
+    },
+    "jenis_kelamin": {
+      "type": "enumeration",
+      "enum": [
+        "L",
+        "P"
+      ]
+    },
+    "tempat_lahir": {
+      "type": "string"
+    },
+    "no_hp": {
+      "type": "string"
+    },
+    "alamat": {
+      "type": "string"
+    },
+    "tanggal_lahir": {
+      "type": "string"
+    }
+  }
+}
